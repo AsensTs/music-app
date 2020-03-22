@@ -6,10 +6,10 @@
 
 <script>
 // @ is an alias to /src
-import musicHeader from "@/components/musicHeader.vue";
+import musicHeader from "../components/header/musicHeader";
 
 export default {
-  name: "Home",
+  name: "Header",
   components: {
     musicHeader
   }
