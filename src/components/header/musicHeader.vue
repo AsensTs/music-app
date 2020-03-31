@@ -4,7 +4,9 @@
     <div class="m-header-nav">
       <ul class="m-nav-ul">
         <li class="m-nav-li" v-for="item in navData" :key="item.id">
-          <a>{{ item.navName }}</a>
+          <router-link tag="a" :to="item.link" exact-active-class="active">
+            {{ item.navName }}
+          </router-link>
         </li>
       </ul>
     </div>
@@ -20,10 +22,10 @@ export default {
     return {
       headerLogoPic: require("@images/header/music-logo.png"),
       navData: [
-        { id: 1, navName: "推荐" },
-        { id: 2, navName: "歌手" },
-        { id: 3, navName: "排行" },
-        { id: 4, navName: "搜索" }
+        { id: 1, navName: "推荐", link: "/" },
+        { id: 2, navName: "歌手", link: "/singer" },
+        { id: 3, navName: "排行", link: "/panking" },
+        { id: 4, navName: "搜索", link: "/search" }
       ]
     };
   }
@@ -50,6 +52,9 @@ export default {
         font-size: 36px
         font-weight: 200
         color: $color-text-l
+        .active
+          color: #000
+          font-weight: bold
   .m-header-mine
     width: 15%
     text-align: center

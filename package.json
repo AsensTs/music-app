@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@types/swipe": "^2.0.27",
+    "@types/swiper": "^5.2.1",
     "core-js": "^3.6.4",
     "swiper": "^5.3.6",
     "vue": "^2.6.11",

@@ -1,5 +1,5 @@
 <template>
-  <div class="music-banner" v-swiper:mySwiper="swiperOption">
+  <div class="music-banner mglr30" v-swiper:mySwiper="swiperOption">
     <ul class="banner-ul swiper-wrapper">
       <li
         class="banner-li swiper-slide"
@@ -41,7 +41,7 @@ export default {
 <style lang="stylus" scoped>
 .music-banner
   height: 267px
-  margin: 0 30px
+  margin-top: $mg10
   border-radius: 15px
   overflow: hidden
   .banner-ul

@@ -1,8 +1,19 @@
 <template>
   <div id="app">
-    <router-view />
+    <vueHome></vueHome>
   </div>
 </template>
+
+<script>
+import vueHome from "./views/Home";
+
+export default {
+  name: "app",
+  components: {
+    vueHome
+  }
+};
+</script>
 
 <style lang="stylus">
 #app
